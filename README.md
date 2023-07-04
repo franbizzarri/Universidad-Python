@@ -2,6 +2,7 @@
 Curso de Python (Udemy) - Ubaldo Acosta
 
 Curso de Python desde cero a experto.
+
 Scope:
 - PySide
 - Tkinter
