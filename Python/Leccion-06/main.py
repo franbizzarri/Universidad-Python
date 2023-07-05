@@ -93,12 +93,84 @@ resultado la multiplicacion de todos los valores pasados como argumentos.
 
 # FUNCION FACTORIAL ------------------------>
 
-def factorial(num):
-    if num == 1:
-        return 1
-    else:
-        return num * factorial(num - 1)
+# def factorial(num):
+#     if num == 1:
+#         return 1
+#     else:
+#         return num * factorial(num - 1)
 
-resultado = factorial(5)
+# resultado = factorial(5)
 
-print(f'El factorial de 5 es {resultado}')
+# print(f'El factorial de 5 es {resultado}')
+
+# EJERCICIO: Imprimir numeros de forma descendente ---------------------------------->
+"""
+Imprimir numeros de 5 a 1 de manera descendente usando funciones recursivas.
+Puede ser cualquier valor positivo, ejemplo, si pasamos el valor de 5, debe imprimir:
+5
+4
+3
+2
+1
+
+En caso de pasar el valor de 3, debe imprimir: 
+3
+2
+1
+
+Si se pasan valores negativos, no debe imprimir nada.
+"""
+
+# def descendente(num):
+#     if num >= 1:
+#         print(num)
+#         descendente(num - 1)
+#     elif num == 0:
+#         return
+#     elif num <= 0:
+#         print('Valor Incorrecto') 
+    
+
+# descendente(5)
+    
+    
+# EJERCICIO: Calculadora de impuestos --------------------------------------->
+"""
+Crear una funcion para calcular el total de un pago incluyendo un impuesto aplicado.
+Formula: pago_total = pago_sin_impuesto + pago_sin_impuesto * (impuesto/100)
+"""
+
+# def calculadora_impuestos(pago, imp):
+#     total = pago + pago * (imp/100)
+#     return total
+
+# pago_sin_impuesto = float(input('Ingrese el monto del pago sin impuesto: '))
+# impuesto = float(input('Ingrese el porcentaje del impuesto: '))
+
+
+# total_a_pagar = calculadora_impuestos(pago_sin_impuesto, impuesto)
+
+# print(f'El monto total a pagar es: {total_a_pagar}')
+    
+
+# EJERCICIO: Convertidor de temperaturas -------------------------------------->
+
+"""
+Realizar dos funciones para convertir de grados Celsius a Farenheit y viceversa
+"""
+
+# Funcion para convertir de Celsius a Farenheit
+def cel_a_far(temp):
+    return (temp * 9/5) + 32
+    
+# Funcion para convertir de Farenheit a Celsius
+def far_a_cel(temp):
+    return (temp - 32) * 5/9
+
+celsius = int(input('Ingrese temperatura en Celsius para convertir a Farenheit: '))
+temp_celsius = cel_a_far(celsius)
+print(f'Resultado: {celsius}°C a Farenheit: {temp_celsius:.2f}°F')
+farenheit = int(input('Ingrese temperatura en Farenheit para convertir a Celsius: '))       # PARA MOSTRAR UNICAMENTE DOS DECIMALES SE UTILIZA {nombre_variable:.2f}
+temp_farenheit = far_a_cel(farenheit)
+print(f'Resultado: {farenheit}°F a Celsius: {temp_farenheit:.2f}°C')
+
