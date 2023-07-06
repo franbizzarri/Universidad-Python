@@ -57,3 +57,11 @@ persona3 = Persona('Emma', 'Bizzarri', 2)
 persona1.mostrarDetalle()
 persona2.mostrarDetalle()
 persona3.mostrarDetalle()
+
+Persona.mostrarDetalle(persona1) # Otra forma de ejecutar un metodo de una clase aunque no es lo comun
+
+# CREAR UN NUEVO ATRIBUTO A UN OBJETO
+
+persona1.telefono = '2616525783'
+
+print(f'Telefono - Persona 1: {persona1.telefono} ')
